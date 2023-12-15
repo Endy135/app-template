@@ -1,0 +1,38 @@
+brcdb:
+  short_name: brc
+  host: pyox2k01
+  service_name: BRCEX_PP2
+  username: BRC_UXXXXXX
+  password: xxxxxxxx
+  port: 1521
+
+sftp:
+  filebox_sftp:
+    host: filebox.inetpsa.com
+    username: UXXXXXX
+    password: xxxxxxxx
+  name_sftp2:
+    host: mts2.inetpsa.com
+    username: XXXXXXX
+    password: xxxxxxxx
+
+aws:
+  aws_access_key_id: xxxxx
+  aws_secret_access_key: xxxxxxx
+  endpoint_url: http://s3.inetpsa.com:9020
+
+mail:
+  host: smtp-auth.preprod.mpsa.com
+  sender: brc.users@mpsa.com
+  user: mwpbrcml
+  password: xxxxxxxx
+  to_recipients: [forename1.name1@mpsa.com, forename2.name2@mpsa.com]
+  cc_recipients: []
+
+azureml:
+  subscription_id: xxxxx
+  resource_group: xxxxx
+  workspace_name: xxxxx
+  cluster_name: testtemplate
+  cluster_vm_size: STANDARD_DS2_V2
+  cluster_max_nodes: 2

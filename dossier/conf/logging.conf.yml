@@ -1,0 +1,40 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  console:
+    format: "%(asctime)s - %(name)s - %(levelname)s %(process).5d - %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+handlers:
+  console:
+    level: WARNING
+    class: logging.StreamHandler
+    formatter: console
+    stream: ext://sys.stdout
+  file_error:
+    level: ERROR
+    class: logging.handlers.TimedRotatingFileHandler
+    when: "D"
+    interval: 1
+    backupCount: 7
+    formatter: console
+  file_info:
+    level: INFO
+    class: logging.handlers.TimedRotatingFileHandler
+    when: "D"
+    interval: 1
+    backupCount: 7
+    formatter: console
+  file_debug:
+    level: DEBUG
+    class: logging.handlers.TimedRotatingFileHandler
+    when: "D"
+    interval: 1
+    backupCount: 7
+    formatter: console
+root:
+  level: DEBUG
+  handlers:
+    - console
+    - file_error
+    - file_info
+    - file_debug

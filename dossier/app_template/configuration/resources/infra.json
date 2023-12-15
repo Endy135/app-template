@@ -1,0 +1,21 @@
+{
+  "flow": {
+    "input_dirpath": "/user/brc05/data/refined/manf001_vehc_prdc_flow/year=2021/month=01",
+    "output_filename": "production_details",
+    "perimeter": {
+      "site_code": ["PY"],
+      "genr_door": "SMON",
+      "start_date": "2021-01-18",
+      "end_date": "2021-01-21"
+    },
+    "columns": [
+      "site_code",
+      "faml_grp_labl",
+      "vin",
+      "pass_date"
+    ]
+  },
+  "kpis": {
+    "table_name": "app00_prdc_kpis"
+  }
+}
